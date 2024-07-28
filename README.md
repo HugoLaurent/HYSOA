@@ -41,7 +41,7 @@ Pour installer et exécuter ce projet localement, suivez ces étapes :
     ```
 4. Démarrez l'application :
     ```bash
-    npm start
+    npm run dev
     ```
 
 
