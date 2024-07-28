@@ -1,0 +1,93 @@
+.Shop {
+  height: 100vh;
+  color: white;
+}
+
+.Shop .empty-bg {
+  background-image: url("./../../assets/images/background/FOND VIDE.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Shop .album__choice-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 10; /* z-index supérieur à .empty-bg */
+}
+
+.Shop .album__choice-container img {
+  
+  cursor: pointer;
+  width: 30%;
+}
+
+.Shop .album__details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.album__details {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.album__details .detail-img {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.album__navigation {
+  top: 0;
+  position: absolute;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.album__navigation img {
+  width: 10%;
+}
+
+.album__navigation div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.album__navigation div p {
+  margin: 0;
+
+  color: white;
+}

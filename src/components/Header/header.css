@@ -1,0 +1,63 @@
+.Header {
+  position: fixed;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  width: 10%;
+  z-index: 100;
+  filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 1));
+}
+
+.Header .logo {
+  width: 100%;
+  z-index: 40;
+}
+
+.perso-1,
+.perso-2,
+.perso-3,
+.perso-4,
+.perso-5,
+.perso-6,
+.perso-7 {
+  position: absolute;
+  z-index: 50;
+    animation: fadeIn 2s;
+}
+
+.perso-1 {
+  right: 160px;
+  top: -40px;
+}
+
+.perso-4 {
+  left: 250px;
+  top: -40px;
+}
+
+.perso-5 {
+  z-index: 20;
+}
+
+.perso-6 {
+    right: 300px;
+    top: -40px;
+}
+
+.perso-7 {
+  right: 100px;
+  top: -40px;
+  z-index: 20;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
